@@ -4,6 +4,10 @@ import com.booking.slotbooking.dto.CancelBookingRequestDTO;
 import com.booking.slotbooking.service.BookingCancellationService;
 import org.springframework.web.bind.annotation.*;
 
+
+/**
+ * @Author Allan George
+ */
 @RestController
 @RequestMapping("/api/bookings")
 public class BookingCancellationController {

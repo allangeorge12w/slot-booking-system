@@ -4,6 +4,10 @@ import jakarta.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
+
+/**
+ * @Author Allan George
+ */
 @Entity
 @Table(name = "payments")
 public class Payment {

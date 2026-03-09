@@ -10,6 +10,10 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+
+/**
+ * @Author Allan George
+ */
 @Service
 public class PartnerServiceImpl implements PartnerService {
 

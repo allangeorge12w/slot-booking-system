@@ -2,6 +2,10 @@ package com.booking.slotbooking.dto;
 
 import java.math.BigDecimal;
 
+
+/**
+ * @Author Allan George
+ */
 public class PaymentWebhookDTO {
 
     private String eventId;

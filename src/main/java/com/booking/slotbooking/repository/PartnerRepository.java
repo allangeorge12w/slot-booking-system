@@ -8,6 +8,10 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+
+/**
+ * @Author Allan George
+ */
 @Repository
 public class PartnerRepository {
 

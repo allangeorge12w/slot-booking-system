@@ -2,6 +2,10 @@ package com.booking.slotbooking.dto;
 
 import java.time.LocalDateTime;
 
+
+/**
+ * @Author Allan George
+ */
 public class BookingRequestDTO {
 
 	private Long partnerId;

@@ -3,6 +3,10 @@ package com.booking.slotbooking.entity;
 import jakarta.persistence.*;
 import java.time.LocalDateTime;
 
+
+/**
+ * @Author Allan George
+ */
 @Entity
 @Table(name = "bookings", uniqueConstraints = {
 		@UniqueConstraint(columnNames = { "partner_id", "slot_start", "slot_end" }) })

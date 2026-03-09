@@ -10,6 +10,10 @@ import com.booking.slotbooking.entity.Booking;
 import com.booking.slotbooking.repository.BookingRepository;
 import com.booking.slotbooking.service.BookingService;
 
+
+/**
+ * @Author Allan George
+ */
 @Service
 public class BookingServiceImpl implements BookingService {
 

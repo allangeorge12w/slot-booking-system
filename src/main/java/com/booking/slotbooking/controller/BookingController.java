@@ -9,6 +9,10 @@ import com.booking.slotbooking.dto.BookingRequestDTO;
 import com.booking.slotbooking.entity.Booking;
 import com.booking.slotbooking.service.BookingService;
 
+
+/**
+ * @Author Allan George
+ */
 @RestController
 @RequestMapping("/api/bookings")
 public class BookingController {

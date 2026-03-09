@@ -4,6 +4,10 @@ import com.booking.slotbooking.dto.PaymentWebhookDTO;
 import com.booking.slotbooking.service.PaymentService;
 import org.springframework.web.bind.annotation.*;
 
+
+/**
+ * @Author Allan George
+ */
 @RestController
 @RequestMapping("/api/payments")
 public class PaymentController {

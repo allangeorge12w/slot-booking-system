@@ -1,5 +1,8 @@
 package com.booking.slotbooking.dto;
 
+/**
+ * @Author Allan George
+ */
 public class CancelBookingRequestDTO {
 
     private Long bookingId;

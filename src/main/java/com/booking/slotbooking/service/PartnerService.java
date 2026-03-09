@@ -5,6 +5,10 @@ import com.booking.slotbooking.entity.Partner;
 
 import java.util.List;
 
+
+/**
+ * @Author Allan George
+ */
 public interface PartnerService {
 
     Partner createPartner(PartnerRequestDTO request);

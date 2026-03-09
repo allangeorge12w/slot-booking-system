@@ -2,6 +2,10 @@ package com.booking.slotbooking.entity;
 
 import jakarta.persistence.*;
 
+
+/**
+ * @Author Allan George
+ */
 @Entity
 @Table(name = "partners")
 public class Partner {

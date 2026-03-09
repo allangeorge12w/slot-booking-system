@@ -7,6 +7,10 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+
+/**
+ * @Author Allan George
+ */
 @RestController
 @RequestMapping("/api/partners")
 public class PartnerController {
