@@ -7,9 +7,9 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.booking.slotbooking.dto.BookingRequestDTO;
 import com.booking.slotbooking.entity.Booking;
+import com.booking.slotbooking.exception.SlotAlreadyBookedException;
 import com.booking.slotbooking.repository.BookingRepository;
 import com.booking.slotbooking.service.BookingService;
-
 
 /**
  * @Author Allan George
@@ -27,11 +27,11 @@ public class BookingServiceImpl implements BookingService {
 	@Transactional
 	public Booking createBooking(BookingRequestDTO request) {
 
-		List<Booking> existingBookings = bookingRepository.findByPartnerAndSlot(request.getPartnerId(),
-				request.getSlotStart(), request.getSlotEnd());
+		List<Booking> existing = bookingRepository.findByPartnerAndSlot(request.getPartnerId(), request.getSlotStart(),
+				request.getSlotEnd());
 
-		if (!existingBookings.isEmpty()) {
-			throw new RuntimeException("Slot already booked for this partner");
+		if (!existing.isEmpty()) {
+			throw new SlotAlreadyBookedException("This slot is already booked for the partner.");
 		}
 
 		Booking booking = new Booking();
@@ -39,7 +39,8 @@ public class BookingServiceImpl implements BookingService {
 		booking.setCustomerId(request.getCustomerId());
 		booking.setSlotStart(request.getSlotStart());
 		booking.setSlotEnd(request.getSlotEnd());
-		booking.setStatus("CONFIRMED");
+		booking.setBookingStatus("CREATED");
+		booking.setPaymentStatus("PENDING");
 
 		return bookingRepository.save(booking);
 	}
